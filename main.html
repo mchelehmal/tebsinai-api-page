@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>TebSinAI API Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Simple password protection -->
+  <div id="loginContainer">
+    <h2>Please Enter Password</h2>
+    <input type="password" id="passwordInput" placeholder="Password">
+    <button id="loginButton">Login</button>
+  </div>
+  
+  <!-- Main content hidden until login -->
+  <div id="mainContent" style="display:none;">
+    <header>
+      <div class="container header-container">
+        <h1><a href="https://tebsinai.com" class="title-link">TebSinAI</a></h1>
+        <nav>
+          <ul>
+            <li><a href="https://tebsinai.com">Home</a></li>
+            <li><a href="transcribed.html">Transcribed Notes</a></li>
+            <li><a href="#">Support</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    
+    <main>
+      <div class="hero">
+        <div class="console">
+          <h2>Patient Encounter Input</h2>
+          <div class="input-fields">
+            <input type="text" id="providerId" placeholder="Provider ID" />
+            <input type="text" id="encounterNumber" placeholder="Encounter Number" />
+          </div>
+          <textarea id="patientInput" placeholder="Enter your patient encounter details here..."></textarea>
+          <button id="sendRequest">Send Request</button>
+        </div>
+        <div class="status">
+          <h2>Artificial Intelligence Analysis</h2>
+          <textarea id="aiAnalysis" placeholder="AI analysis will appear here..." readonly></textarea>
+          <button id="copyClipboard">Copy to Clipboard</button>
+        </div>
+      </div>
+    </main>
+    
+    <footer>
+      <p>Elastic Beanstalk API Integration | &copy; 2025 TebSinAI</p>
+    </footer>
+  </div>
+  <script src="js/script.js"></script>
+</body>
+</html>
